@@ -5,64 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj's Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left-panel {
+            width: 50%;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+        .right-panel {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e9ecef;
+        }
+        iframe {
+            border: none;
+            width: 95%;
+            height: 90%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Suraj</h1>
-        <p>Python Fullstack Developer | Django Framework | AWS Cloud | Automation Specialist</p>
-    </header>
+    <div class="container">
+        <div class="left-panel">
+            <header>
+                <h1>Suraj</h1>
+                <p>Python Fullstack Developer | Django Framework | AWS Cloud | Automation Specialist</p>
+            </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a detail-oriented Python Fullstack Developer with over 2 years of experience specializing in Django framework. I have extensive knowledge in developing full-stack web applications, automation testing, and deploying solutions on AWS Cloud. My expertise spans both frontend and backend development, along with API integrations.</p>
-    </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a detail-oriented Python Fullstack Developer with over 2 years of experience specializing in Django framework. I have extensive knowledge in developing full-stack web applications, automation testing, and deploying solutions on AWS Cloud. My expertise spans both frontend and backend development, along with API integrations.</p>
+            </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, JavaScript</li>
-            <li>Frameworks: Django, Django Rest Framework, React</li>
-            <li>Frontend: HTML, CSS, Bootstrap</li>
-            <li>Databases: PostgreSQL, MySQL</li>
-            <li>Tools: Git, Jenkins, Selenium, PyTest</li>
-            <li>Cloud: AWS (EC2, S3, RDS)</li>
-        </ul>
-    </section>
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Programming Languages: Python, JavaScript</li>
+                    <li>Frameworks: Django, Django Rest Framework, React</li>
+                    <li>Frontend: HTML, CSS, Bootstrap</li>
+                    <li>Databases: PostgreSQL, MySQL</li>
+                    <li>Tools: Git, Jenkins, Selenium, PyTest</li>
+                    <li>Cloud: AWS (EC2, S3, RDS)</li>
+                </ul>
+            </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="job">
-            <h3>Python Automation Engineer</h3>
-            <p><strong>Company:</strong> Cisco Hyperflex (via Wipro)</p>
-            <p><strong>Duration:</strong> 2+ years</p>
-            <ul>
-                <li>Developed and maintained automation test scripts using Python, Selenium, and PyTest.</li>
-                <li>Built RESTful APIs and backend services using Django and Django Rest Framework.</li>
-                <li>Deployed solutions on AWS Cloud, leveraging services like EC2 and S3.</li>
-                <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
-            </ul>
+            <section id="experience">
+                <h2>Professional Experience</h2>
+                <div class="job">
+                    <h3>Python Automation Engineer</h3>
+                    <p><strong>Company:</strong> Cisco Hyperflex (via Wipro)</p>
+                    <p><strong>Duration:</strong> 2+ years</p>
+                    <ul>
+                        <li>Developed and maintained automation test scripts using Python, Selenium, and PyTest.</li>
+                        <li>Built RESTful APIs and backend services using Django and Django Rest Framework.</li>
+                        <li>Deployed solutions on AWS Cloud, leveraging services like EC2 and S3.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>Bachelor of Engineering</strong></p>
+                <p>Vidya Vardhaka College of Engineering</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Project Name:</strong> E-Commerce Platform <br> <strong>Description:</strong> Built a full-stack e-commerce application with Django backend and React frontend, integrated with Stripe for payment processing.</li>
+                    <li><strong>Project Name:</strong> Automation Framework <br> <strong>Description:</strong> Designed a robust automation framework for API and UI testing, reducing manual testing efforts by 50%.</li>
+                </ul>
+            </section>
+
+            <footer>
+                <h2>Contact</h2>
+                <p>Email: suraj@example.com</p>
+                <p>GitHub: <a href="https://github.com/SurajProfile" target="_blank">github.com/SurajProfile</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/suraj" target="_blank">linkedin.com/in/suraj</a></p>
+            </footer>
         </div>
-    </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Bachelor of Engineering</strong></p>
-        <p>Vidya Vardhaka College of Engineering</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project Name:</strong> E-Commerce Platform <br> <strong>Description:</strong> Built a full-stack e-commerce application with Django backend and React frontend, integrated with Stripe for payment processing.</li>
-            <li><strong>Project Name:</strong> Automation Framework <br> <strong>Description:</strong> Designed a robust automation framework for API and UI testing, reducing manual testing efforts by 50%.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <h2>Contact</h2>
-        <p>Email: suraj@example.com</p>
-        <p>GitHub: <a href="https://github.com/SurajProfile" target="_blank">github.com/SurajProfile</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/suraj" target="_blank">linkedin.com/in/suraj</a></p>
-    </footer>
+        <div class="right-panel">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUOiUuc7mqr2frEJSK-Ai36dtHTg15gpEcOQ8eMUC9wGPHhg/viewform?embedded=true" allowfullscreen>
+                Loading…
+            </iframe>
+        </div>
+    </div>
 </body>
 </html>
