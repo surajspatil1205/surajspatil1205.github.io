@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj's Resume</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             margin: 0;
@@ -12,13 +11,16 @@
         }
         .container {
             display: flex;
+            flex-direction: row;
             height: 100vh;
+            overflow: hidden;
         }
         .left-panel {
             width: 50%;
             padding: 20px;
             overflow-y: auto;
             background-color: #f9f9f9;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
         .right-panel {
             width: 50%;
@@ -30,12 +32,30 @@
         iframe {
             border: none;
             width: 95%;
-            height: 90%;
+            height: 95%;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        p, ul, li {
+            margin: 5px 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Left Panel: Resume -->
         <div class="left-panel">
             <header>
                 <h1>Suraj</h1>
@@ -96,8 +116,9 @@
             </footer>
         </div>
 
+        <!-- Right Panel: Collaboration Form -->
         <div class="right-panel">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUOiUuc7mqr2frEJSK-Ai36dtHTg15gpEcOQ8eMUC9wGPHhg/viewform?embedded=true" allowfullscreen>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUOiUuc7mqr2frEJSK-Ai36dtHTg15gpEcOQ8eMUC9wGPHhg/viewform?embedded=true">
                 Loading…
             </iframe>
         </div>
